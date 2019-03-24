@@ -17,14 +17,14 @@ router.get('/', function (req, res, next) {
 });
 
 // Videos Api :
-router.get('/allvideo', video.getAllVideos);
+router.get('/allvideo', video.getAllVideos); // pass params shuffle=1 for shuffled result.
 router.get('/video', video.getVideosID);
 router.get('/video_remove', video.videoRemoveID);
 router.post('/addVideo', video.addVideo);
 
 //playlist Api :
 router.post('/addplaylist', playlist.addplaylist);
-router.get('/allplaylists', playlist.getAllPlaylists);
+router.get('/allplaylists', playlist.getAllPlaylists); // pass params shuffle=1 for shuffled result.
 router.get('/playlist', playlist.getPlaylistID);
 router.get('/playlist_remove', playlist.playlistRemoveID);
 
